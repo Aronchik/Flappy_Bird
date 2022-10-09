@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_night"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Button
+        android:id="@+id/btn_night"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/night_button_states"
+        android:textAllCaps="false"
+        android:gravity="left"/>
+
+    <Button
+        android:id="@+id/btn_day"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/day_button_states"
+        android:gravity="right"/>
+
+    <com.example.assignmentgame.GameView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEB3B"
+        android:textSize="50sp"
+        android:text="@string/txt_score_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/btn_start_text"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/start_button_shape"
+        android:textColor="#000000"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/txt_choose_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/txt_choose_lvl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/btn_start"/>
+
+    <Spinner
+        android:id="@+id/spinner_levels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_choose_lvl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+    </Spinner>
+
+    <RelativeLayout
+        android:id="@+id/rl_game_over"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txt_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_game_over_text"
+            android:textSize="50sp"
+            android:layout_centerInParent="true"
+            android:textColor="#ff00"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+        <TextView
+            android:id="@+id/txt_score_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_score_over_text"
+            android:textSize="100sp"
+            android:textColor="#ff00"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+        <TextView
+            android:id="@+id/txt_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_best_score_text"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_score_over"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_continue"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_game_over"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFEB3B"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+</RelativeLayout>

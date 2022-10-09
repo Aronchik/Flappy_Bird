@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Assignment Game</string>
+    <string name="txt_score_text">0</string>
+    <string name="btn_start_text">התחל</string>
+    <string name="txt_game_over_text">סוף משחק</string>
+    <string name="txt_score_over_text">0</string>
+    <string name="txt_best_score_text">"שיא נוכחי: "</string>
+    <string name="txt_continue">לחץ בכל מקום בכדי להמשיך</string>
+
+    <string-array name="Levels">
+        <item>שלב 1</item>
+        <item>שלב 2</item>
+        <item>שלב 3</item>
+        <item>שלב 4</item>
+    </string-array>
+
+    <string name="txt_choose_lvl">אנא בחר את רמת הקושי ולחץ על \"התחל\"</string>
+</resources>

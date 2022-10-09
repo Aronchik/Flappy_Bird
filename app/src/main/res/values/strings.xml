@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Assignment Game</string>
+    <string name="txt_score_text">0</string>
+    <string name="btn_start_text">Start</string>
+    <string name="txt_game_over_text">Game Over</string>
+    <string name="txt_score_over_text">0</string>
+    <string name="txt_best_score_text">"Best Score: "</string>
+    <string name="txt_continue">Press anywhere to continue.</string>
+    
+    <string-array name="Levels">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+    </string-array>
+
+    <string name="txt_choose_lvl">Please select a difficulty and click \"Start\"</string>
+</resources>
